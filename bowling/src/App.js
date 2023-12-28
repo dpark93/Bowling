@@ -44,57 +44,61 @@ if(breakPoint >= 13 && breakPoint <= 17){
 
   return (
     <div className="App">
-      <header className="App-header">
-    
-      <div className='InputContainer'>
-        <label className='Label'>Personal Number</label>
-        <input type='number' onChange={(e) => {setPersonalNum(e.target.value)}} value={personalNum} placeholder='Personal Number' className='InputField'/>
-      </div>
+      <div className="App-header">
 
-      <div className='InputContainer'>
-        <label className='Label'>Oil Length</label>
-        <input type='number' onChange={(e) => {setOilLength(e.target.value)}} value={oilLength} placeholder='Oil Length' className='InputField'/>
-      </div>
-      
-      <div className='InputContainer'>
-        <label className='Label'>Break Point</label>
-        <input type='number' onChange={(e) => {SetBreakPoint(e.target.value)}} value={breakPoint} placeholder='Break Point' className='InputField'/>
-      </div>
-      
-      <div className='InputContainer'>
-        <label className='Label'>Arrow</label>
-        <input type='number' onChange={(e) => {setArrow(e.target.value)}} value={arrow} placeholder='Arrow' className='InputField'/>
-      </div>
 
-      <div className='calcbtn'>
-        <button onClick={()=> {handleClick()}}>Give Me Result</button>
+      <div className='number-continer'>
+        
+          <div className='InputContainer'>
+            <label className='Label'>Personal Number</label>
+            <input type='number' onChange={(e) => {setPersonalNum(e.target.value)}} value={personalNum} placeholder='Personal Number' className='InputField'/>
+          </div>
+
+          <div className='InputContainer'>
+            <label className='Label'>Oil Length</label>
+            <input type='number' onChange={(e) => {setOilLength(e.target.value)}} value={oilLength} placeholder='Oil Length' className='InputField'/>
+          </div>
+          
+          <div className='InputContainer'>
+            <label className='Label'>Break Point</label>
+            <input type='number' onChange={(e) => {SetBreakPoint(e.target.value)}} value={breakPoint} placeholder='Break Point' className='InputField'/>
+          </div>
+          
+          <div className='InputContainer'>
+            <label className='Label'>Arrow</label>
+            <input type='number' onChange={(e) => {setArrow(e.target.value)}} value={arrow} placeholder='Arrow' className='InputField'/>
+          </div>
+
+          <div>
+            <button onClick={()=> {handleClick()}} className='calcbtn'>Give Me Result</button>
+          </div>
       </div>
 
       <div className='result-container'>
 
           <div className='result'>
-            <h4>Stand: {standresult} </h4>
+            <h4><span className='prefixSpan'>Stand:</span> <span className='prefixnum'>{standresult}</span> </h4>
           </div>
 
           <div className='result'>
-            <h4>Arrow: {arrowresult}</h4>
+            <h4><span className='prefixSpan'>Arrow:</span>  <span className='prefixnum'>{arrowresult}</span></h4>
           </div>
 
           <div className='result'>
-            <h4>Look at Pin: {pinresult}</h4>
+            <h4><span className='prefixSpan'>Look at Pin:</span>  <span className='prefixnum'>{pinresult}</span></h4>
           </div>
 
           <div className='result'>
-            <h4>BreakPoint You Selected: {breakPoint}</h4>
+            <h4><span className='prefixSpan'>BreakPoint You Selected:</span>  <span className='prefixnum'>{breakPoint}</span></h4>
           </div>
 
           <div className='result'>
-            <h4>Recommended BreakPoint: {recbreakpoint}</h4>
+            <h4><span className='prefixSpan'>Recommended BreakPoint:</span>  <span className='prefixnum'>{recbreakpoint}</span></h4>
           </div>
 
       </div>
 
-      </header>
+      </div>
     </div>
   );
 }
