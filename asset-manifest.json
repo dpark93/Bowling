@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bowling-app-react/static/css/main.d2411a11.css",
+    "main.js": "/bowling-app-react/static/js/main.38fea301.js",
+    "static/js/787.9660757e.chunk.js": "/bowling-app-react/static/js/787.9660757e.chunk.js",
+    "index.html": "/bowling-app-react/index.html",
+    "main.d2411a11.css.map": "/bowling-app-react/static/css/main.d2411a11.css.map",
+    "main.38fea301.js.map": "/bowling-app-react/static/js/main.38fea301.js.map",
+    "787.9660757e.chunk.js.map": "/bowling-app-react/static/js/787.9660757e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2411a11.css",
+    "static/js/main.38fea301.js"
+  ]
+}
